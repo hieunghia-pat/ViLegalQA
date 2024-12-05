@@ -1,0 +1,58 @@
+{
+    "0": {
+        "question": "Quốc hội hết nhiệm kỳ thì Chủ tịch nước do Quốc hội bầu có phải tiếp tục thực hiện nhiệm vụ hay không?",
+        "prompt": "Quốc hội hết nhiệm kỳ thì Chủ tịch nước do Quốc hội bầu có phải tiếp tục thực hiện nhiệm vụ hay không? Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật, NUMBER chỉ số liệu của văn bản đó, CHAPTER chỉ chương, SECTION chỉ mục, SUBSECTION chỉ tiểu mục, ARTICLE chỉ điều, CLAUSE chỉ khoản.",
+        "response": "{\n  \"DOCUMENT\": \"Luật Quốc hội\",\n  \"NUMBER\": \"23/2014/QH13\",\n  \"CHAPTER\": \"CHƯNG I: QUỐC HỘI\",\n  \"SECTION\": \"Điều 34\",\n  \"SUBSECTION\": \"\",\n  \"ARTICLE\": \"Chủ tịch Quốc hội hết nhiệm kỳ thì Chủ tịch nước do Quốc hội bầu tiếp tục thực hiện nhiệm vụ\",\n  \"CLAUSE\": \"\"\n}",
+        "reference": [
+            {
+                "document": "hiến pháp 2013",
+                "number": "Khongso",
+                "type": "Hiến pháp",
+                "điều": null,
+                "khoản": null
+            }
+        ]
+    },
+    "1": {
+        "question": "Ai sẽ là người được chơi trò chơi điện tử có thưởng?",
+        "prompt": "Ai sẽ là người được chơi trò chơi điện tử có thưởng? Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật, NUMBER chỉ số liệu của văn bản đó, CHAPTER chỉ chương, SECTION chỉ mục, SUBSECTION chỉ tiểu mục, ARTICLE chỉ điều, CLAUSE chỉ khoản.",
+        "response": "{\n  \"DOCUMENT\": \"Văn bản pháp luật về bảo vệ người chơi trò chơi điện tử\",\n  \"NUMBER\": 123,\n  \"CHAPTER\": \"Chapter 1: Quy định chung\",\n  \"SECTION\": \"Article 1.1: Mục đích\",\n  \"SUBSECTION\": \"1.1.1: Bảo vệ quyền lợi của người chơi\",\n  \"ARTICLE\": \"Điều 1.2: Người được bảo vệ\",\n  \"CLAUSE\": \"Khoản 1.2.1: Người chơi trò chơi điện tử\",\n  \"Nội dung\": \"Người được chơi trò chơi điện tử có thưởng bao gồm, nhưng không giới hạn ở, người chơi trò chơi điện tử độc lập, người chơi trò chơi điện tử trong môi trường gia đình, và người chơi trò chơi điện tử trong môi trường công cộng. Người chơi trò chơi điện tử này bao gồm cả người chơi trò chơi điện tử trẻ em và người chơi trò chơi điện tử người lớn.\"\n}",
+        "reference": [
+            {
+                "document": "nghị định 121/2020/nđ-cp",
+                "number": "121/2021/NĐ-CP",
+                "type": "Nghị định",
+                "điều": "9",
+                "khoản": null
+            }
+        ]
+    },
+    "2": {
+        "question": "Thủ tục tàu biển xuất cảnh được thực hiện như thế nào?",
+        "prompt": "Thủ tục tàu biển xuất cảnh được thực hiện như thế nào? Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật, NUMBER chỉ số liệu của văn bản đó, CHAPTER chỉ chương, SECTION chỉ mục, SUBSECTION chỉ tiểu mục, ARTICLE chỉ điều, CLAUSE chỉ khoản.",
+        "response": "{\n  \"DOCUMENT\": \"Văn bản pháp luật về thủ tục tàu biển xuất cảnh\",\n  \"NUMBER\": \"78/2015/NĐ-CP\",\n  \"CHAPTER\": \"Về thủ tục hải quan\",\n  \"SECTION\": \"3\",\n  \"SUBSECTION\": \"2\",\n  \"ARTICLE\": \"Điều 34\",\n  \"CLAUSE\": \"Thủ tục xuất cảnh tàu biển được thực hiện theo quy định của Bộ trưởng Bộ Tài chính về thủ tục hải quan đối với hàng hóa, trừ trường hợp được phép miễn thủ tục hải quan theo quy định của pháp luật.\"\n}",
+        "reference": [
+            {
+                "document": "nghị định 58/2017/nđ-cp",
+                "number": "58/2017/NĐ-CP",
+                "type": "Nghị định",
+                "điều": "90",
+                "khoản": null
+            }
+        ]
+    },
+    "3": {
+        "question": "Công ty đại chúng sau quá trình cơ cấu lại doanh nghiệp muốn đăng ký chào bán chứng khoán ra công chúng thì cần chuẩn bị hồ sơ như thế nào?",
+        "prompt": "Công ty đại chúng sau quá trình cơ cấu lại doanh nghiệp muốn đăng ký chào bán chứng khoán ra công chúng thì cần chuẩn bị hồ sơ như thế nào? Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật, NUMBER chỉ số liệu của văn bản đó, CHAPTER chỉ chương, SECTION chỉ mục, SUBSECTION chỉ tiểu mục, ARTICLE chỉ điều, CLAUSE chỉ khoản.",
+        "response": "{\n  \"DOCUMENT\": [\n    {\n      \"CHAPTER\": \"Laws and Regulations\",\n      \"SECTION\": \"Company Law\",\n      \"SUBSECTION\": \"Article 1\",\n      \"ARTICLE\": \"About the company\",\n      \"CLAUSE\": \"A company is a legal entity established to conduct business activities.\"\n    },\n    {\n      \"CHAPTER\": \"Laws and Regulations\",\n      \"SECTION\": \"Securities Law\",\n      \"SUBSECTION\": \"Article 1\",\n      \"ARTICLE\": \"About the securities\",\n      \"CLAUSE\": \"Securities are financial instruments that represent ownership or investment rights in a company.\"\n    },\n    {\n      \"CHAPTER\": \"Laws and Regulations\",\n      \"SECTION\": \"Stock Exchange Law\",\n      \"SUBSECTION\": \"Article 1\",\n      \"ARTICLE\": \"About the stock exchange\",\n      \"CLAUSE\": \"A stock exchange is a platform for buying and selling securities.\"\n    }\n  ],\n  \"NUMBER\": [\n    {\n      \"CHAPTER\": \"Circular 01/2020\",\n      \"SECTION\": \"Article 1\",\n      \"SUBSECTION\": \"\",\n      \"ARTICLE\": \"About the issuance of shares\",\n      \"CLAUSE\": \"A company can issue shares to raise capital for business activities.\"\n    },\n    {\n      \"CHAPTER\": \"Circular 02/2020\",\n      \"SECTION\": \"Article 1\",\n      \"SUBSECTION\": \"\",\n      \"ARTICLE\": \"About the listing of securities\",\n      \"CLAUSE\": \"A company's securities can be listed on a stock exchange to raise capital from the public.\"\n    }\n  ],\n  \"CHAPTER\": \"Company Law\",\n  \"SECTION\": \"Article 1\",\n  \"SUBSECTION\": \"\",\n  \"ARTICLE\": \"About the company\",\n  \"CLAUSE\": \"A company must be established in accordance with the law and register with the relevant authorities.\"\n}",
+        "reference": [
+            {
+                "document": "nghị định 155/2020/nđ-cp",
+                "number": "155/2020/NĐ-CP",
+                "type": "Nghị định",
+                "điều": "31",
+                "khoản": null
+            }
+        ]
+    }
+}

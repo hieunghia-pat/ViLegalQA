@@ -14,14 +14,16 @@ with tqdm(data) as pb:
         item = data[key]
         question = item["question"]
         contexts = item["contexts"]
-        prompt = f"Câu hỏi: {question}. Để trả lời câu hỏi này cần tham chiếu đến loại văn bản pháp luật nào của Việt Nam và cụ thể số hiệu của văn bản đó là gì? Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật và NUMBER chỉ số liệu của văn bản đó."
+        prompt = f"{question} Câu trả lời cần ở dạng JSON, với khóa DOCUMENT chỉ loại văn bản pháp luật, NUMBER chỉ số liệu của văn bản đó, CHAPTER chỉ chương, SECTION chỉ mục, SUBSECTION chỉ tiểu mục, STATEMENT chỉ điều, CLAUSE chỉ khoản."
         reference = []
         for id in contexts:
             context = contexts[id]
             reference.append({
                 "document": context["document"],
                 "number": context["Số hiệu:"],
-                "type": context["Loại văn bản:"]
+                "type": context["Loại văn bản:"],
+                "điều": context["điều"] if "điều" in context else None,
+                "khoản": context["khoản"] if "khoản" in context else None
             })
         text = "Error!"
         try:
