@@ -3,10 +3,10 @@ import json
 from tqdm import tqdm
 import time
 
-genai.configure(api_key="AIzaSyD0OoyhPELgVdiXPl_2rilO33xqnEmMQKk")
+genai.configure(api_key="API Key")
 model = genai.GenerativeModel("gemini-1.5-flash")
 
-data = json.load(open("/home/ngiangh/Projects/ViLeQuAD/dataset/test_data.json"))
+data = json.load(open("../test_data.json"))
 results = {}
 total_error_requests = 0
 with tqdm(data) as pb:
@@ -44,5 +44,5 @@ with tqdm(data) as pb:
             "reference": reference
         }
 
-        json.dump(results, open("results-gemini-1.5-flash.json", "w+"), ensure_ascii=False, indent=4)
+        json.dump(results, open("results-gemini-1.5-flash-task-1-2.json", "w+"), ensure_ascii=False, indent=4)
         time.sleep(10)
